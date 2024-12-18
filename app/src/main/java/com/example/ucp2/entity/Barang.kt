@@ -1,4 +1,4 @@
-package com.example.ucp2.data.entity
+package com.example.ucp2.entity
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
@@ -6,11 +6,10 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "Barang")
 data class Barang(
     @PrimaryKey
-    val id: Int = 0,
+    val id: String,
     val nama: String,
     val deskripsi: String,
     val harga: Int,
     val stok: Int,
-    val namaSuplayer: String
-
+    val namasuplayer: String
 )
