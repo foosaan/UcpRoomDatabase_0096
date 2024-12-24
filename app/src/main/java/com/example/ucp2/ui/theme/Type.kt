@@ -1,4 +1,4 @@
-package com.example.ucp2.ui.theme
+package com.example.ucp_2pam.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
