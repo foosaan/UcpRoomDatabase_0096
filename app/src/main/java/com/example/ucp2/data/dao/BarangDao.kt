@@ -5,7 +5,7 @@ import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
 import androidx.room.Update
-import com.example.ucp2.data.entity.Barang
+import com.example.ucp2.entity.Barang
 import kotlinx.coroutines.flow.Flow
 
 @Dao
@@ -20,7 +20,7 @@ interface BarangDao {
 
     //getBarang
     @Query("SELECT * FROM barang WHERE id = :id")
-    fun getDetailBarang(id: Int): Barang
+    fun getBarang(id: String): Flow<Barang>
 
     //deleteBarang
     @Delete
